@@ -1,0 +1,117 @@
+﻿CONJECTUREPANEL Quiz
+PROOF "S, T, B, C, ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)) ⊢ ¬D"
+INFER S,
+     T,
+     B,
+     C,
+     ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+     ⊢ ¬D 
+FORMULAE
+0 ⊥,
+1 D,
+2 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)),
+3 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D),
+4 ¬D,
+5 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D),
+6 (S∧T∧B∧C)→D,
+7 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D),
+8 (¬S∧¬T∧¬B∧C)→D,
+9 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D),
+10 (¬S∧¬T∧B∧¬C)→D,
+11 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D),
+12 (¬S∧T∧¬B∧¬C)→D,
+13 (¬S∧¬T∧¬B∧¬C)→D,
+14 (S∧¬T∧¬B∧¬C)→D,
+15 ¬S,
+16 S,
+17 ¬S∧¬T,
+18 ¬T,
+19 ¬S∧¬T∧¬B,
+20 ¬B,
+21 ¬S∧¬T∧¬B∧¬C,
+22 ¬C,
+23 T,
+24 B,
+25 C,
+26 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+IS
+SEQ (cut[B,C\13,4]) ("→ intro"[A,B\21,1]) (cut[B,C\19,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\19,22]) (hyp[A\21])) (cut[B,C\17,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\17,20]) (hyp[A\19])) (cut[B,C\15,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\15,18]) (hyp[A\17])) (cut[B,C\16,1]) (hyp[A\16]) (cut[B,C\0,1]) ("¬ elim"[B\16]) (hyp[A\16]) (hyp[A\15]) ("contra (constructive)"[B\1]) (hyp[A\0]) (cut[B,C\11,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\14,13]) (hyp[A\13])) (cut[B,C\9,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\12,11]) (hyp[A\11])) (cut[B,C\7,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\10,9]) (hyp[A\9])) (cut[B,C\5,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\8,7]) (hyp[A\7])) (cut[B,C\3,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\6,5]) (hyp[A\5])) (cut[B,C\0,4]) ("¬ elim"[B\3]) (hyp[A\3]) (hyp[A\2]) ("¬ intro"[A\1]) (hyp[A\0])
+END
+CONJECTUREPANEL Quiz
+CURRENTPROOF "S, T, B, C, ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)) ⊢ ¬D"
+INFER S,
+     T,
+     B,
+     C,
+     ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+     ⊢ ¬D 
+FORMULAE
+0 ⊥,
+1 D,
+2 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)),
+3 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D),
+4 ¬D,
+5 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D),
+6 (S∧T∧B∧C)→D,
+7 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D),
+8 (¬S∧¬T∧¬B∧C)→D,
+9 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D),
+10 (¬S∧¬T∧B∧¬C)→D,
+11 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D),
+12 (¬S∧T∧¬B∧¬C)→D,
+13 (¬S∧¬T∧¬B∧¬C)→D,
+14 (S∧¬T∧¬B∧¬C)→D,
+15 ¬S,
+16 S,
+17 ¬S∧¬T,
+18 ¬T,
+19 ¬S∧¬T∧¬B,
+20 ¬B,
+21 ¬S∧¬T∧¬B∧¬C,
+22 ¬C,
+23 T,
+24 B,
+25 C,
+26 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+IS
+SEQ (cut[B,C\13,4]) ("→ intro"[A,B\21,1]) (cut[B,C\19,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\19,22]) (hyp[A\21])) (cut[B,C\17,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\17,20]) (hyp[A\19])) (cut[B,C\15,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\15,18]) (hyp[A\17])) (cut[B,C\16,1]) (hyp[A\16]) (cut[B,C\0,1]) ("¬ elim"[B\16]) (hyp[A\16]) (hyp[A\15]) ("contra (constructive)"[B\1]) (hyp[A\0]) (cut[B,C\11,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\14,13]) (hyp[A\13])) (cut[B,C\9,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\12,11]) (hyp[A\11])) (cut[B,C\7,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\10,9]) (hyp[A\9])) (cut[B,C\5,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\8,7]) (hyp[A\7])) (cut[B,C\3,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\6,5]) (hyp[A\5])) (cut[B,C\0,4]) ("¬ elim"[B\3]) (hyp[A\3]) (hyp[A\2]) ("¬ intro"[A\1]) (hyp[A\0])
+END
+CONJECTUREPANEL Quiz
+CURRENTPROOF "¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)) ⊢ ¬D"
+INFER ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+     ⊢ ¬D 
+FORMULAE
+0 ⊥,
+1 D,
+2 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)),
+3 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D),
+4 ¬D,
+5 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D),
+6 (S∧T∧B∧C)→D,
+7 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D),
+8 (¬S∧¬T∧¬B∧C)→D,
+9 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D),
+10 (¬S∧¬T∧B∧¬C)→D,
+11 ((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D),
+12 (¬S∧T∧¬B∧¬C)→D,
+13 (¬S∧¬T∧¬B∧¬C)→D,
+14 (S∧¬T∧¬B∧¬C)→D,
+15 ¬S,
+16 S,
+17 ¬S∧¬T,
+18 ¬T,
+19 ¬S∧¬T∧¬B,
+20 ¬B,
+21 ¬S∧¬T∧¬B∧¬C,
+22 ¬C,
+23 ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+IS
+SEQ (cut[B,C\13,4]) ("→ intro"[A,B\21,1]) (cut[B,C\19,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\19,22]) (hyp[A\21])) (cut[B,C\17,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\17,20]) (hyp[A\19])) (cut[B,C\15,1]) (LAYOUT "∧ elim" (0) ("∧ elim(L)"[A,B\15,18]) (hyp[A\17])) (cut[B,C\16,1]) ("contra (classical)"[A\16]) (cut[B,C\16,0]) ("contra (classical)"[A\16]) (cut[B,C\16,0]) (NEXTGOAL) (cut[B,C\0,0]) ("¬ elim"[B\16]) (hyp[A\16]) (hyp[A\15]) (hyp[A\0]) (cut[B,C\0,0]) ("¬ elim"[B\16]) (hyp[A\16]) (hyp[A\15]) (hyp[A\0]) (cut[B,C\0,1]) ("¬ elim"[B\16]) (hyp[A\16]) (hyp[A\15]) ("contra (classical)"[A\1]) (hyp[A\0]) (cut[B,C\11,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\14,13]) (hyp[A\13])) (cut[B,C\9,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\12,11]) (hyp[A\11])) (cut[B,C\7,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\10,9]) (hyp[A\9])) (cut[B,C\5,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\8,7]) (hyp[A\7])) (cut[B,C\3,4]) (LAYOUT "∨ intro" (0) ("∨ intro(L)"[B,A\6,5]) (hyp[A\5])) (cut[B,C\0,4]) ("¬ elim"[B\3]) (hyp[A\3]) (hyp[A\2]) ("¬ intro"[A\1]) (hyp[A\0])
+END
+CONJECTUREPANEL Quiz
+CURRENTPROOF "¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D)) ⊢ ¬D"
+INFER ¬(((¬S∧¬T∧¬B∧¬C)→D)∨((S∧¬T∧¬B∧¬C)→D)∨((¬S∧T∧¬B∧¬C)→D)∨((¬S∧¬T∧B∧¬C)→D)∨((¬S∧¬T∧¬B∧C)→D)∨((S∧T∧B∧C)→D))
+     ⊢ ¬D 
+IS
+NEXTGOAL
+END
